@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div>
+			<form action="" id="searchForm">
+				<input type="text" name="text" placeholder="Search">
+				<button type="submit">Search</button>
+			</form>
+			<p id="errors_block"></p>
+			<button id="add_to_the_gallery">Add selected images to the gallery</button>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div id="status_loading"><p>Loading...</p></div>
+		<div class="col-3">
+			<h3>Results</h3>
+			<div id="results"></div>
+		</div>
+		<div class="col-1 border-left">
+			<h3>Your Gallery</h3>
+			<div id="gallery"></div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
